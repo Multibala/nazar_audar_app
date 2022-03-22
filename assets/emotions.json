@@ -1,0 +1,186 @@
+{
+    "emotions":[
+    {
+        "title":"Conversation",
+        "color":"FFCCC5",
+        "assetImage":"images/emotion_conversation.png",
+        "commands":{
+            "title":"Me",
+            "assetImage":"images/emotion_conversation.png",
+            "phrases":[
+                "My name is Beksultan",
+                "I’m Beksultan",
+                "Do you know my name?",
+                "What is your name? ",
+                "Nice to meet you!",
+                "💙     Do you like me?",
+                "👫     Can we be friends?",
+                "📲     I’m using assistive communication app.",
+                "❓     Who are you?"
+            ]
+
+        }
+            
+        
+    },
+    {
+        "title":"People",
+        "color":"9AB0FF",
+        "assetImage":"images/emotion_people.png",
+        "commands":{ 
+            "title":"Me",
+            "assetImage":"images/emotion_people.png",
+            "phrases":[
+                "My name is Beksultan",
+                "I’m Beksultan",
+                "Do you know my name?",
+                "What is your name? ",
+                "Nice to meet you!",
+                "💙     Do you like me?",
+                "👫     Can we be friends?",
+                "📲     I’m using assistive communication app.",
+                "❓     Who are you?"
+            ]
+
+        }
+            
+        
+    },
+    {
+        "title":"Feelings",
+        "color":"FFF89A",
+        "assetImage":"images/emotion_feelings.png",
+        "commands":{
+            "title":"Me",
+            "assetImage":"images/emotion_conversation.png",
+            "phrases":[
+                "My name is Beksultan",
+                "I’m Beksultan",
+                "Do you know my name?",
+                "What is your name? ",
+                "Nice to meet you!",
+                "💙     Do you like me?",
+                "👫     Can we be friends?",
+                "📲     I’m using assistive communication app.",
+                "❓     Who are you?"
+            ]
+
+        }
+            
+        
+    },
+    {
+        "title":"Food",
+        "color":"9AFFA4",
+        "assetImage":"images/emotion_food.png",
+        "commands":{
+            "title":"Me",
+            "assetImage":"images/emotion_conversation.png",
+            "phrases":[
+                "My name is Beksultan",
+                "I’m Beksultan",
+                "Do you know my name?",
+                "What is your name? ",
+                "Nice to meet you!",
+                "💙     Do you like me?",
+                "👫     Can we be friends?",
+                "📲     I’m using assistive communication app.",
+                "❓     Who are you?"
+            ]
+
+        }
+            
+        
+    },{
+        "title":"Animals",
+        "color":"FFCCC5",
+        "assetImage":"images/emotion_animals.png",
+        "commands":{
+            "title":"Me",
+            "assetImage":"images/emotion_conversation.png",
+            "phrases":[
+                "My name is Beksultan",
+                "I’m Beksultan",
+                "Do you know my name?",
+                "What is your name? ",
+                "Nice to meet you!",
+                "💙     Do you like me?",
+                "👫     Can we be friends?",
+                "📲     I’m using assistive communication app.",
+                "❓     Who are you?"
+            ]
+
+        }
+            
+        
+    },
+    {
+        "title":"Shapes",
+        "color":"9ADCFF",
+        "assetImage":"images/emotion_shapes.png",
+        "commands":{
+            "title":"Me",
+            "assetImage":"images/emotion_conversation.png",
+            "phrases":[
+                "My name is Beksultan",
+                "I’m Beksultan",
+                "Do you know my name?",
+                "What is your name? ",
+                "Nice to meet you!",
+                "💙     Do you like me?",
+                "👫     Can we be friends?",
+                "📲     I’m using assistive communication app.",
+                "❓     Who are you?"
+            ]
+
+        }
+            
+        
+    },
+    {
+        "title":"Colors",
+        "color":"FF8AAE",
+        "assetImage":"images/emotion_colors.png",
+        "commands":{
+            "title":"Me",
+            "assetImage":"images/emotion_conversation.png",
+            "phrases":[
+                "My name is Beksultan",
+                "I’m Beksultan",
+                "Do you know my name?",
+                "What is your name? ",
+                "Nice to meet you!",
+                "💙     Do you like me?",
+                "👫     Can we be friends?",
+                "📲     I’m using assistive communication app.",
+                "❓     Who are you?"
+            ]
+
+        }
+            
+        
+    },
+    {
+        "title":"Activities",
+        "color":"FFDFA0",
+        "assetImage":"images/emotion_activities.png",
+        "commands":{
+            "title":"Me",
+            "assetImage":"images/emotion_conversation.png",
+            "phrases":[
+                "My name is Beksultan",
+                "I’m Beksultan",
+                "Do you know my name?",
+                "What is your name? ",
+                "Nice to meet you!",
+                "💙     Do you like me?",
+                "👫     Can we be friends?",
+                "📲     I’m using assistive communication app.",
+                "❓     Who are you?"
+            ]
+
+        }
+            
+        
+    }
+]}

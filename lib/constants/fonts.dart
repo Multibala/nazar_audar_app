@@ -1,0 +1,1 @@
+const loginPageFont = "Gilroy";
