@@ -24,6 +24,7 @@ class _EmotionsPageState extends State<EmotionsPage> {
     final String response = await rootBundle.loadString('assets/emotions.json');
     final data = await json.decode(response);
     emotions.clear();
+
     setState(() {
       for (var item in data['emotions']) {
         emotions.add(Emotions.fromJson(item));
@@ -57,7 +58,8 @@ class _EmotionsPageState extends State<EmotionsPage> {
           elevation: 0.0,
           backgroundColor: loginBackgroundColor,
           flexibleSpace: Container(
-            padding: const EdgeInsets.only(top: 120, left: 31),
+            alignment: Alignment.bottomCenter,
+            padding: const EdgeInsets.only(bottom: 15),
             child: const Text(
               'Express your emotions',
               style: TextStyle(
@@ -74,10 +76,10 @@ class _EmotionsPageState extends State<EmotionsPage> {
             crossAxisSpacing: 8,
             mainAxisSpacing: 8,
             children: List.generate(emotions.length,
-                (index) => emotions[index].widgetOfCategory())),
+                (index) => emotions[index].widgetOfCategory(context))),
       );
     } else {
-      return Center(child: CircularProgressIndicator());
+      return const Center(child: CircularProgressIndicator());
     }
   }
 }

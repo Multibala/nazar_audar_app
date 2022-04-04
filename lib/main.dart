@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:nazar_audar_app/pages/category_screen.dart';
 import 'package:nazar_audar_app/pages/emotions_screen.dart';
 import 'package:nazar_audar_app/pages/hand_gesture.dart';
 import 'package:nazar_audar_app/pages/home_screen.dart';
@@ -19,6 +20,7 @@ Future<void> main() async {
       handGestureRoute: (context) => HandGestureScreen(),
       profilePageRoute: (context) => ProfilePage(),
       emotionsPageRoute: (context) => EmotionsPage(),
+      categoryPageRoute: (context) => CategoryPage(),
     },
     initialRoute: loginPageRoute,
   ));

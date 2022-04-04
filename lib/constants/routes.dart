@@ -4,3 +4,4 @@ const homePageRoute = '/home';
 const handGestureRoute = '/hand_gesture/';
 const profilePageRoute = '/profile';
 const emotionsPageRoute = '/emotions';
+const categoryPageRoute = '/emotions/category';
