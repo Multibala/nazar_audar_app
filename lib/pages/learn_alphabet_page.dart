@@ -4,11 +4,40 @@ import 'package:nazar_audar_app/constants/colors.dart';
 import '../constants/fonts.dart';
 
 class LearnWordPage extends StatelessWidget {
-  const LearnWordPage({Key? key}) : super(key: key);
+  var alphabet = [
+    "A",
+    "B",
+    "C",
+    "D",
+    "E",
+    "F",
+    "G",
+    "H",
+    "I",
+    "J",
+    "K",
+    "L",
+    "M",
+    "N",
+    "O",
+    "P",
+    "Q",
+    "R",
+    "S",
+    "T",
+    "U",
+    "V",
+    "W",
+    "X",
+    "Y",
+    "Z"
+  ];
+  LearnWordPage({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     var urlTemp = 'images/Aa.png';
+
     return Scaffold(
       backgroundColor: HexColor.fromHex("#FEECE3"),
       appBar: AppBar(
@@ -60,7 +89,7 @@ class LearnWordPage extends StatelessWidget {
           ),
         ),
         child: Container(
-          padding: const EdgeInsets.all(37),
+          padding: const EdgeInsets.all(25),
           decoration: BoxDecoration(
               borderRadius: const BorderRadius.all(
                 Radius.circular(37),
@@ -80,7 +109,7 @@ class LearnWordPage extends StatelessWidget {
                 // width: 71,
               ),
               Text(
-                'Aa',
+                alphabet[index] + alphabet[index].toLowerCase(),
                 textAlign: TextAlign.center,
                 style: TextStyle(
                   fontFamily: loginPageFont,
