@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:nazar_audar_app/constants/colors.dart';
 import 'package:nazar_audar_app/constants/fonts.dart';
+import 'package:nazar_audar_app/constants/routes.dart';
 
 class HandGestureScreen extends StatefulWidget {
   const HandGestureScreen({Key? key}) : super(key: key);
@@ -88,9 +89,12 @@ class _HandGestureScreenState extends State<HandGestureScreen> {
     );
   }
 
-  Widget buildRectanle(String title, Image image, Color color) {
+  Widget buildRectanle(String title, Image image, Color color,
+      {url = '/learn_words'}) {
     return TextButton(
-      onPressed: () {},
+      onPressed: () {
+        Navigator.pushNamed(context, learnAplhabetPageRoute);
+      },
       child: Container(
         padding: const EdgeInsets.only(left: 20),
         decoration: BoxDecoration(

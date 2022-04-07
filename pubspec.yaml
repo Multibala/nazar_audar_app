@@ -74,6 +74,7 @@ flutter:
     - images/emotion_animals.png
     - images/emotion_feelings.png
     - images/emotion_conversation.png
+    - images/Aa.png
     - assets/emotions.json
 
 
