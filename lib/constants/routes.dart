@@ -6,3 +6,4 @@ const profilePageRoute = '/profile';
 const emotionsPageRoute = '/emotions';
 const categoryPageRoute = '/emotions/category';
 const learnAplhabetPageRoute = handGestureRoute + 'learn_alphabet';
+const learnWordPageRoute = handGestureRoute + 'learn_word';

@@ -58,7 +58,8 @@ class _HandGestureScreenState extends State<HandGestureScreen> {
                       width: 117,
                       height: 101,
                     ),
-                    const Color(0xFF53B29C)),
+                    const Color(0xFF53B29C),
+                    learnAplhabetPageRoute),
                 const SizedBox(
                   height: 16,
                 ),
@@ -70,7 +71,8 @@ class _HandGestureScreenState extends State<HandGestureScreen> {
                       width: 152,
                       height: 113,
                     ),
-                    const Color(0xFFF8A497)),
+                    const Color(0xFFF8A497),
+                    learnWordPageRoute),
                 const SizedBox(
                   height: 16,
                 ),
@@ -79,7 +81,8 @@ class _HandGestureScreenState extends State<HandGestureScreen> {
                     const Image(
                       image: AssetImage('images/yellow_rocket_flying_up.png'),
                     ),
-                    const Color(0xFF7879F1)),
+                    const Color(0xFF7879F1),
+                    learnAplhabetPageRoute),
                 const SizedBox(
                   height: 16,
                 )
@@ -89,11 +92,10 @@ class _HandGestureScreenState extends State<HandGestureScreen> {
     );
   }
 
-  Widget buildRectanle(String title, Image image, Color color,
-      {url = '/learn_words'}) {
+  Widget buildRectanle(String title, Image image, Color color, String route) {
     return TextButton(
       onPressed: () {
-        Navigator.pushNamed(context, learnAplhabetPageRoute);
+        Navigator.pushNamed(context, route);
       },
       child: Container(
         padding: const EdgeInsets.only(left: 20),

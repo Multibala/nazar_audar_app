@@ -3,7 +3,7 @@ import 'package:nazar_audar_app/constants/colors.dart';
 
 import '../constants/fonts.dart';
 
-class LearnWordPage extends StatelessWidget {
+class LearnAlphabetPage extends StatelessWidget {
   var alphabet = [
     "A",
     "B",
@@ -32,7 +32,7 @@ class LearnWordPage extends StatelessWidget {
     "Y",
     "Z"
   ];
-  LearnWordPage({Key? key}) : super(key: key);
+  LearnAlphabetPage({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

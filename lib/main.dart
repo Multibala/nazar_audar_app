@@ -4,6 +4,7 @@ import 'package:nazar_audar_app/pages/emotions_screen.dart';
 import 'package:nazar_audar_app/pages/hand_gesture.dart';
 import 'package:nazar_audar_app/pages/home_screen.dart';
 import 'package:nazar_audar_app/pages/learn_alphabet_page.dart';
+import 'package:nazar_audar_app/pages/learn_words.dart';
 import 'package:nazar_audar_app/pages/login_page.dart';
 import 'package:nazar_audar_app/pages/profile_page.dart';
 import 'package:nazar_audar_app/pages/signup_page.dart';
@@ -22,7 +23,8 @@ Future<void> main() async {
       profilePageRoute: (context) => ProfilePage(),
       emotionsPageRoute: (context) => EmotionsPage(),
       categoryPageRoute: (context) => CategoryPage(),
-      learnAplhabetPageRoute: (context) => LearnWordPage(),
+      learnAplhabetPageRoute: (context) => LearnAlphabetPage(),
+      learnWordPageRoute: (context) => LearnWordsPage(),
     },
     initialRoute: loginPageRoute,
   ));
