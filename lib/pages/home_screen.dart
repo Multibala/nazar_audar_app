@@ -79,7 +79,7 @@ class _HomeScreenState extends State<HomeScreen> {
               'Get started to learn Braille Alphabet',
               Icons.abc_outlined,
               Colors.black,
-              '',
+              brailePageRoute,
             ),
             const SizedBox(
               height: 11,

@@ -21,6 +21,12 @@ class _SignUpScreenState extends State<SignUpScreen> {
   TextEditingController _surname = TextEditingController();
   TextEditingController _email = TextEditingController();
   TextEditingController _password = TextEditingController();
+  @override
+  void initState() {
+    // TODO: implement initState
+    ToastContext().init(context);
+    super.initState();
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -158,26 +164,22 @@ class _SignUpScreenState extends State<SignUpScreen> {
     int count = 0;
 
     if (username.isEmpty) {
-      Toast.show('Please Enter Username', context,
-          duration: Toast.LENGTH_LONG, gravity: Toast.BOTTOM);
+      Toast.show('Please Enter Username');
     } else {
       count++;
     }
     if (surname.isEmpty) {
-      Toast.show('Please Enter surname', context,
-          duration: Toast.LENGTH_LONG, gravity: Toast.BOTTOM);
+      Toast.show('Please Enter surname');
     } else {
       count++;
     }
     if (email.isEmpty) {
-      Toast.show('Please Enter email', context,
-          duration: Toast.LENGTH_LONG, gravity: Toast.BOTTOM);
+      Toast.show('Please Enter email');
     } else {
       count++;
     }
     if (password.isEmpty) {
-      Toast.show('Please Enter password', context,
-          duration: Toast.LENGTH_LONG, gravity: Toast.BOTTOM);
+      Toast.show('Please Enter password');
     } else {
       count++;
     }

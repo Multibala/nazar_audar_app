@@ -102,8 +102,6 @@ class _CategoryPageState extends State<CategoryPage> {
         children: [
           Image(
             image: AssetImage(image),
-            // width: MediaQuery.of(context).size.width * 0.2,
-            // height: MediaQuery.of(context).size.width * 0.2,
           ),
           const SizedBox(
             height: 5,

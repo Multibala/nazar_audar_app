@@ -4,9 +4,12 @@ import 'package:nazar_audar_app/constants/fonts.dart';
 import 'package:nazar_audar_app/constants/routes.dart';
 import 'package:nazar_audar_app/db/user_database.dart';
 import 'package:nazar_audar_app/models/user_authetication.dart';
+// ignore: import_of_legacy_library_into_null_safe
 import 'package:toast/toast.dart';
 
 class LoginPage extends StatefulWidget {
+  const LoginPage({Key? key}) : super(key: key);
+
   @override
   State<LoginPage> createState() => _LoginPageState();
 }
@@ -14,6 +17,13 @@ class LoginPage extends StatefulWidget {
 class _LoginPageState extends State<LoginPage> {
   final _username = TextEditingController();
   final _password = TextEditingController();
+  @override
+  void initState() {
+    // TODO: implement initState
+    ToastContext().init(context);
+    super.initState();
+  }
+
   @override
   Widget build(BuildContext context) {
     // print(DefaultTextStyle.of(context).style.fontFamily);
@@ -121,7 +131,12 @@ class _LoginPageState extends State<LoginPage> {
           child: TextField(
             controller: _username,
             keyboardType: TextInputType.name,
-            style: TextStyle(
+            onChanged: (String a) => {
+              // if (_username.text.length > 0) {
+              //   _username.clear()
+              //   }
+            },
+            style: const TextStyle(
               color: Colors.black87,
             ),
             decoration: InputDecoration(
@@ -215,7 +230,7 @@ class _LoginPageState extends State<LoginPage> {
           'email': email,
         });
       } else {
-        Toast.show('Plese enter correct password or username', context);
+        Toast.show('Plese enter correct password or username');
       }
     }
   }

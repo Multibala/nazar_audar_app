@@ -36,8 +36,6 @@ class LearnAlphabetPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    var urlTemp = 'images/Aa.png';
-
     return Scaffold(
       backgroundColor: HexColor.fromHex("#FEECE3"),
       appBar: AppBar(
@@ -82,9 +80,9 @@ class LearnAlphabetPage extends StatelessWidget {
         width: 156,
         // height: 400,
         padding: const EdgeInsets.all(5),
-        decoration: BoxDecoration(
+        decoration: const BoxDecoration(
           color: Colors.white,
-          borderRadius: const BorderRadius.all(
+          borderRadius: BorderRadius.all(
             Radius.circular(37),
           ),
         ),
@@ -104,14 +102,15 @@ class LearnAlphabetPage extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
               Image(
-                image: AssetImage('images/Aa.png'),
+                image: AssetImage(
+                    'images/hand_poses/letter-${alphabet[index].toLowerCase()}.png'),
                 // height: 101,
                 // width: 71,
               ),
               Text(
                 alphabet[index] + alphabet[index].toLowerCase(),
                 textAlign: TextAlign.center,
-                style: TextStyle(
+                style: const TextStyle(
                   fontFamily: loginPageFont,
                   fontWeight: FontWeight.w700,
                   fontSize: 50,
