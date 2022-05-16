@@ -4,10 +4,12 @@
         "title":"Conversation",
         "color":"FFCCC5",
         "assetImage":"images/emotion_conversation.png",
-        "commands":[{
+        "commands":[
+            {
             "title":"Me",
             "assetImage":"images/emotions_pic/conversation/cards_conversation_me@2x.png",
             "title_image":"images/",
+            "audio_url":"images/emotions_pic/conversation/audio/me.mp3",
             "phrases":[
                 "My name is Beksultan",
                 "I’m Beksultan",
@@ -244,13 +246,17 @@
             
         
     },
+
+
+
     {
         "title":"People",
         "color":"9AB0FF",
         "assetImage":"images/emotion_people.png",
-        "commands":[{ 
-            "title":"Me",
-            "assetImage":"images/emotion_people.png",
+        "commands":[
+            { 
+            "title":"Aunt",
+            "assetImage":"images/emotions_pic/people/cards_people_aunt@2x.png",
             "phrases":[
                 "My name is Beksultan",
                 "I’m Beksultan",
@@ -263,7 +269,9 @@
                 "❓     Who are you?"
             ]
 
-        }]
+        }
+    
+    ]
             
         
     },

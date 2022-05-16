@@ -91,7 +91,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 build_rectangle(
                   'Braille',
                   'Get started to learn Braille Alphabet',
-                  'braile_icon.png',
+                  'images/braile_icon.png',
                   Colors.black,
                   brailePageRoute,
                 ),
@@ -101,7 +101,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 build_rectangle(
                   'Gesture',
                   'Learn to talk with sign language',
-                  'emotions_icon.png',
+                  '',
                   const Color(0xFFFDB34E),
                   handGestureRoute,
                 ),
@@ -111,7 +111,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 build_rectangle(
                   'Emotions',
                   'Express your emotions with pictures',
-                  'emotions_icon.png',
+                  'images/emotions_icon.png',
                   const Color(0xFF1C7BB1),
                   emotionsPageRoute,
                 ),
@@ -121,11 +121,6 @@ class _HomeScreenState extends State<HomeScreen> {
         )
       ]),
     );
-  }
-
-  String getCapitalize(String str) {
-    String temp = str.characters.first.toUpperCase() + str.substring(1);
-    return temp;
   }
 
   Widget build_rectangle(String title, String content, String data, Color color,
@@ -143,40 +138,45 @@ class _HomeScreenState extends State<HomeScreen> {
           ),
           child:
               Row(mainAxisAlignment: MainAxisAlignment.spaceBetween, children: [
-            Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                Text(
-                  title,
-                  textAlign: TextAlign.start,
-                  style: const TextStyle(
-                    fontFamily: loginPageFont,
-                    fontWeight: FontWeight.w700,
-                    fontSize: 25,
-                    color: Colors.white,
-                  ),
-                ),
-                SizedBox(
-                  width: 200,
-                  child: Text(
-                    content,
-                    softWrap: true,
+            SizedBox(
+              width: 175,
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text(
+                    title,
                     textAlign: TextAlign.start,
                     style: const TextStyle(
                       fontFamily: loginPageFont,
-                      fontWeight: FontWeight.w400,
-                      fontSize: 16,
+                      fontWeight: FontWeight.w700,
+                      fontSize: 25,
                       color: Colors.white,
                     ),
                   ),
-                )
-              ],
+                  SizedBox(
+                    width: 200,
+                    child: Text(
+                      content,
+                      softWrap: true,
+                      textAlign: TextAlign.start,
+                      style: const TextStyle(
+                        fontFamily: loginPageFont,
+                        fontWeight: FontWeight.w400,
+                        fontSize: 16,
+                        color: Colors.white,
+                      ),
+                    ),
+                  )
+                ],
+              ),
             ),
-            Image.asset(
-              data,
-              width: 60,
-              height: 60,
-            ),
+            data != ''
+                ? Image(
+                    image: AssetImage(data),
+                    width: 60,
+                    height: 60,
+                  )
+                : Container()
           ]),
         ));
   }

@@ -1,3 +1,5 @@
+import 'package:flutter/material.dart';
+
 const String tableUser = 'users';
 
 class UserField {
@@ -60,4 +62,9 @@ class User {
   String toString() {
     return 'User{id: id, username: $username, surname: $surname ,email: $email,password:$password}';
   }
+}
+
+String getCapitalize(String str) {
+  String temp = str.characters.first.toUpperCase() + str.substring(1);
+  return temp;
 }

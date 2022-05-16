@@ -14,6 +14,7 @@ class Emotions {
   late String image;
   late String color;
   late List<dynamic> commands;
+
   Emotions(
       {required this.color,
       required this.title,

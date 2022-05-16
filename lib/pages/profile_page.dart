@@ -3,6 +3,7 @@ import 'dart:convert';
 import 'package:flutter/material.dart';
 import 'package:nazar_audar_app/constants/fonts.dart';
 import 'package:nazar_audar_app/constants/routes.dart';
+import 'package:nazar_audar_app/models/user_authetication.dart';
 
 class ProfilePage extends StatelessWidget {
   const ProfilePage({Key? key}) : super(key: key);
@@ -32,7 +33,7 @@ class ProfilePage extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Text(
-                      name,
+                      getCapitalize(name),
                       style: const TextStyle(
                         fontFamily: loginPageFont,
                         fontSize: 25,

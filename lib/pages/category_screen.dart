@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 import '../constants/colors.dart';
 import '../constants/fonts.dart';
+import 'package:audioplayers/audioplayers.dart';
 
 class CategoryPage extends StatefulWidget {
   const CategoryPage({Key? key}) : super(key: key);
@@ -11,6 +12,32 @@ class CategoryPage extends StatefulWidget {
 }
 
 class _CategoryPageState extends State<CategoryPage> {
+  final audio_player = AudioPlayer();
+  bool isPlaying = false;
+
+  @override
+  void initState() {
+    // TODO: implement initState
+    // setAudio('images/emotions_pic/conversation/audion/me.mp3');
+    super.initState();
+  }
+
+  Future setAudio(String path) async {
+    audio_player.setReleaseMode(ReleaseMode.LOOP);
+
+    final player =
+        AudioCache(prefix: 'images/emotions_pic/conversation/audion/');
+    final url = await player.load('me.mp3');
+    audio_player.setUrl(url.path, isLocal: true);
+  }
+
+  @override
+  void dispose() {
+    // TODO: implement dispose
+    audio_player.dispose();
+    super.dispose();
+  }
+
   @override
   Widget build(BuildContext context) {
     FocusScope.of(context).requestFocus(FocusNode());
@@ -87,6 +114,8 @@ class _CategoryPageState extends State<CategoryPage> {
     String title = data['title'];
     String image = data['assetImage'];
     List phrases = data['phrases'];
+    String url = data['audio_url'] ?? '';
+    setAudio(url);
     String color = 'E6E6E6';
     return ElevatedButton(
       style: ButtonStyle(
@@ -98,7 +127,20 @@ class _CategoryPageState extends State<CategoryPage> {
         //     const EdgeInsets.symmetric(vertical: 22, horizontal: 45)),
         backgroundColor: MaterialStateProperty.all(HexColor.fromHex(color)),
       ),
-      onPressed: () {},
+      onPressed: () async {
+        if (isPlaying) {
+          await audio_player.pause();
+        } else {
+          var res = await audio_player.play(url);
+          // ignore: avoid_print
+          print(res);
+          if (res == 1) {
+            setState(() {
+              isPlaying = true;
+            });
+          }
+        }
+      },
       child: Column(
         children: [
           Image(

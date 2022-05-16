@@ -42,6 +42,7 @@ dev_dependencies:
   sqflite: ^2.0.2+1
   intl: ^0.17.0
   toast: ^0.3.0
+  audioplayers: ^0.20.1
 
   # The "flutter_lints" package below contains a set of recommended lints to
   # encourage good coding practices. The lint set provided by the package is
@@ -64,6 +65,8 @@ flutter:
   # To add assets to your application, add an assets section, like this:
   assets:
     - images/hand_poses/
+    - images/
+    - images/emotions_pic/conversation/audio/
     - images/braille_letters/
     - images/emotions_pic/
     - images/emotions_pic/colors/
