@@ -20,7 +20,6 @@ class _CategoryPageState extends State<CategoryPage> {
     List<dynamic> commands = [];
     setState(() {
       commands = args['commands'];
-      print(commands);
     });
     // Map<String, dynamic> args = {
     //   'color': 'E6E6E6',
@@ -95,8 +94,8 @@ class _CategoryPageState extends State<CategoryPage> {
             RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(15.0),
         )),
-        padding: MaterialStateProperty.all(
-            const EdgeInsets.symmetric(vertical: 22, horizontal: 45)),
+        // padding: MaterialStateProperty.all(
+        //     const EdgeInsets.symmetric(vertical: 22, horizontal: 45)),
         backgroundColor: MaterialStateProperty.all(HexColor.fromHex(color)),
       ),
       onPressed: () {},

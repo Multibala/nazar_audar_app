@@ -6,7 +6,7 @@
         "assetImage":"images/emotion_conversation.png",
         "commands":[{
             "title":"Me",
-            "assetImage":"images/emotions_pic/conversation/cards_conversation_me.png",
+            "assetImage":"images/emotions_pic/conversation/cards_conversation_me@2x.png",
             "title_image":"images/",
             "phrases":[
                 "My name is Beksultan",
@@ -22,8 +22,8 @@
 
         },{
             "title":"Bath",
-            "assetImage":"images/emotions_pic/conversation/cards_conversation_hello.png",
-            "title_image":"images/emotions_pic/conversation/cards_conversation_hello.png",
+            "assetImage":"images/emotions_pic/conversation/cards_conversation_hello@2x.png",
+            "title_image":"images/emotions_pic/conversation/cards_conversation_hello@2x.png",
             "phrases":[
                 "My name is Beksultan",
                 "I’m Beksultan",
@@ -38,8 +38,8 @@
 
         },{
             "title":"Help",
-            "assetImage":"images/emotions_pic/conversation/cards_conversation_help.png",
-            "title_image":"images/emotions_pic/conversation/cards_conversation_help.png",
+            "assetImage":"images/emotions_pic/conversation/cards_conversation_help@2x.png",
+            "title_image":"images/emotions_pic/conversation/cards_conversation_help@2x.png",
             "phrases":[
                 "My name is Beksultan",
                 "I’m Beksultan",
@@ -54,8 +54,8 @@
 
         },{
             "title":"Listen",
-            "assetImage":"images/emotions_pic/conversation/cards_conversation_listen.png",
-            "title_image":"images/emotions_pic/conversation/cards_conversation_hello.png",
+            "assetImage":"images/emotions_pic/conversation/cards_conversation_listen@2x.png",
+            "title_image":"images/emotions_pic/conversation/cards_conversation_hello@2x.png",
             "phrases":[
                 "My name is Beksultan",
                 "I’m Beksultan",
@@ -70,8 +70,8 @@
 
         },{
             "title":"Look",
-            "assetImage":"images/emotions_pic/conversation/cards_conversation_look.png",
-            "title_image":"images/emotions_pic/conversation/cards_conversation_hello.png",
+            "assetImage":"images/emotions_pic/conversation/cards_conversation_look@2x.png",
+            "title_image":"images/emotions_pic/conversation/cards_conversation_hello@2x.png",
             "phrases":[
                 "My name is Beksultan",
                 "I’m Beksultan",
@@ -86,8 +86,8 @@
 
         },{
             "title":"Morning",
-            "assetImage":"images/emotions_pic/conversation/cards_conversation_morning.png",
-            "title_image":"images/emotions_pic/conversation/cards_conversation_hello.png",
+            "assetImage":"images/emotions_pic/conversation/cards_conversation_morning@2x.png",
+            "title_image":"images/emotions_pic/conversation/cards_conversation_hello@2x.png",
             "phrases":[
                 "My name is Beksultan",
                 "I’m Beksultan",
@@ -102,8 +102,8 @@
 
         },{
             "title":"Night",
-            "assetImage":"images/emotions_pic/conversation/cards_conversation_night.png",
-            "title_image":"images/emotions_pic/conversation/cards_conversation_hello.png",
+            "assetImage":"images/emotions_pic/conversation/cards_conversation_night@2x.png",
+            "title_image":"images/emotions_pic/conversation/cards_conversation_hello@2x.png",
             "phrases":[
                 "My name is Beksultan",
                 "I’m Beksultan",
@@ -118,8 +118,8 @@
 
         },{
             "title":"No",
-            "assetImage":"images/emotions_pic/conversation/cards_conversation_no.png",
-            "title_image":"images/emotions_pic/conversation/cards_conversation_hello.png",
+            "assetImage":"images/emotions_pic/conversation/cards_conversation_no@2x.png",
+            "title_image":"images/emotions_pic/conversation/cards_conversation_hello@2x.png",
             "phrases":[
                 "My name is Beksultan",
                 "I’m Beksultan",
@@ -134,8 +134,8 @@
 
         },{
             "title":"Play",
-            "assetImage":"images/emotions_pic/conversation/cards_conversation_play.png",
-            "title_image":"images/emotions_pic/conversation/cards_conversation_hello.png",
+            "assetImage":"images/emotions_pic/conversation/cards_conversation_play@2x.png",
+            "title_image":"images/emotions_pic/conversation/cards_conversation_hello@2x.png",
             "phrases":[
                 "My name is Beksultan",
                 "I’m Beksultan",
@@ -150,8 +150,8 @@
 
         },{
             "title":"Sleep",
-            "assetImage":"images/emotions_pic/conversation/cards_conversation_sleep.png",
-            "title_image":"images/emotions_pic/conversation/cards_conversation_hello.png",
+            "assetImage":"images/emotions_pic/conversation/cards_conversation_sleep@2x.png",
+            "title_image":"images/emotions_pic/conversation/cards_conversation_hello@2x.png",
             "phrases":[
                 "My name is Beksultan",
                 "I’m Beksultan",
@@ -167,8 +167,8 @@
         },
         {
             "title":"Speak",
-            "assetImage":"images/emotions_pic/conversation/cards_conversation_speak.png",
-            "title_image":"images/emotions_pic/conversation/cards_conversation_hello.png",
+            "assetImage":"images/emotions_pic/conversation/cards_conversation_speak@2x.png",
+            "title_image":"images/emotions_pic/conversation/cards_conversation_hello@2x.png",
             "phrases":[
                 "My name is Beksultan",
                 "I’m Beksultan",
@@ -184,8 +184,8 @@
         },
         {
             "title":"Toilet",
-            "assetImage":"images/emotions_pic/conversation/cards_conversation_toilet.png",
-            "title_image":"images/emotions_pic/conversation/cards_conversation_hello.png",
+            "assetImage":"images/emotions_pic/conversation/cards_conversation_toilet@2x.png",
+            "title_image":"images/emotions_pic/conversation/cards_conversation_hello@2x.png",
             "phrases":[
                 "My name is Beksultan",
                 "I’m Beksultan",
@@ -201,8 +201,8 @@
         },
         {
             "title":"What",
-            "assetImage":"images/emotions_pic/conversation/cards_conversation_what.png",
-            "title_image":"images/emotions_pic/conversation/cards_conversation_hello.png",
+            "assetImage":"images/emotions_pic/conversation/cards_conversation_what@2x.png",
+            "title_image":"images/emotions_pic/conversation/cards_conversation_hello@2x.png",
             "phrases":[
                 "My name is Beksultan",
                 "I’m Beksultan",
@@ -218,8 +218,8 @@
         },
         {
             "title":"Yes",
-            "assetImage":"images/emotions_pic/conversation/cards_conversation_yes.png",
-            "title_image":"images/emotions_pic/conversation/cards_conversation_hello.png",
+            "assetImage":"images/emotions_pic/conversation/cards_conversation_yes@2x.png",
+            "title_image":"images/emotions_pic/conversation/cards_conversation_hello@2x.png",
             "phrases":[
                 "My name is Beksultan",
                 "I’m Beksultan",

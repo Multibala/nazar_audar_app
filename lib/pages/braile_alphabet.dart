@@ -3,7 +3,7 @@ import 'package:nazar_audar_app/constants/colors.dart';
 
 import '../constants/fonts.dart';
 
-class LearnAlphabetPage extends StatelessWidget {
+class LearnBraileAlphabet extends StatelessWidget {
   var alphabet = [
     "A",
     "B",
@@ -32,15 +32,15 @@ class LearnAlphabetPage extends StatelessWidget {
     "Y",
     "Z"
   ];
-  LearnAlphabetPage({Key? key}) : super(key: key);
+  LearnBraileAlphabet({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: HexColor.fromHex("#FEECE3"),
+      backgroundColor: HexColor.fromHex("#FFECBB"),
       appBar: AppBar(
         elevation: 0,
-        backgroundColor: HexColor.fromHex("#FEECE3"),
+        backgroundColor: HexColor.fromHex("#FFECBB"),
         leading: Container(
           margin: const EdgeInsets.only(top: 0, left: 10),
           child: IconButton(
@@ -78,8 +78,8 @@ class LearnAlphabetPage extends StatelessWidget {
 
   Widget getWordWidgetCanvas(index) {
     return Container(
-        width: 156,
-        // height: 400,
+        // width: 156,
+
         padding: const EdgeInsets.all(5),
         decoration: const BoxDecoration(
           color: Colors.white,
@@ -95,21 +95,21 @@ class LearnAlphabetPage extends StatelessWidget {
               ),
               border: Border.all(
                 width: 3,
-                color: HexColor.fromHex('#FFF7D3BC'),
+                color: HexColor.fromHex('#FFECBB'),
               )),
           // width: 145,
-          height: 234,
+          // height: 200,
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
               Image(
                 image: AssetImage(
-                    'images/hand_poses/letter-${alphabet[index].toLowerCase()}.png'),
+                    'images/braille_letters/${alphabet[index].toUpperCase()}.png'),
                 // height: 101,
                 // width: 71,
               ),
               const SizedBox(
-                height: 40,
+                height: 20,
               ),
               Text(
                 alphabet[index] + alphabet[index].toLowerCase(),

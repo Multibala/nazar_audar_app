@@ -63,7 +63,17 @@ flutter:
 
   # To add assets to your application, add an assets section, like this:
   assets:
-    - images/
+    - images/hand_poses/
+    - images/braille_letters/
+    - images/emotions_pic/
+    - images/emotions_pic/colors/
+    - images/emotions_pic/animals/
+    - images/emotions_pic/activities/
+    - images/emotions_pic/conversation/
+    - images/emotions_pic/feelings/
+    - images/emotions_pic/food/
+    - images/emotions_pic/people/
+    - images/emotions_pic/shapes/
     - assets/emotions.json
 
 

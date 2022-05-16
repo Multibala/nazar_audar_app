@@ -70,11 +70,11 @@ class ProfilePage extends StatelessWidget {
             const SizedBox(
               height: 44,
             ),
-            buildButton('Messages'),
+            buildButton('Home', context),
             marginTxt,
-            buildButton('Settings'),
+            buildButton('Settings', context),
             marginTxt,
-            buildButton('Change password'),
+            buildButton('Change password', context),
             const SizedBox(
               height: 180,
             ),
@@ -117,7 +117,7 @@ class ProfilePage extends StatelessWidget {
     );
   }
 
-  Widget buildButton(String content) {
+  Widget buildButton(String content, BuildContext context) {
     return Container(
       width: double.infinity,
       height: 55,
@@ -127,7 +127,11 @@ class ProfilePage extends StatelessWidget {
         color: Colors.white,
       ),
       child: TextButton(
-        onPressed: () {},
+        onPressed: () {
+          if (content == 'Home') {
+            Navigator.of(context).pop();
+          }
+        },
         child: Text(
           content,
           style: const TextStyle(

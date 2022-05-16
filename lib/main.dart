@@ -1,10 +1,12 @@
 import 'package:flutter/material.dart';
+import 'package:nazar_audar_app/pages/braile_alphabet.dart';
 import 'package:nazar_audar_app/pages/category_screen.dart';
 import 'package:nazar_audar_app/pages/emotions_screen.dart';
 import 'package:nazar_audar_app/pages/hand_gesture.dart';
 import 'package:nazar_audar_app/pages/home_screen.dart';
 import 'package:nazar_audar_app/pages/learn_alphabet_page.dart';
 import 'package:nazar_audar_app/pages/learn_braile.dart';
+import 'package:nazar_audar_app/pages/learn_braile_words.dart';
 import 'package:nazar_audar_app/pages/learn_words.dart';
 import 'package:nazar_audar_app/pages/login_page.dart';
 import 'package:nazar_audar_app/pages/profile_page.dart';
@@ -27,6 +29,8 @@ Future<void> main() async {
       learnAplhabetPageRoute: (context) => LearnAlphabetPage(),
       learnWordPageRoute: (context) => LearnWordsPage(),
       brailePageRoute: (context) => BraileScreen(),
+      braileAplhabetPageRoute: (context) => LearnBraileAlphabet(),
+      braileWordPageRoute: (context) => LearnWordsBraileScreen(),
     },
     initialRoute: loginPageRoute,
   ));

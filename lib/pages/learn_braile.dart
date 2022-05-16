@@ -27,9 +27,10 @@ class _BraileScreenState extends State<BraileScreen> {
         ),
         toolbarHeight: 190,
         flexibleSpace: Container(
-          padding: const EdgeInsets.only(top: 130, left: 25),
+          padding: const EdgeInsets.only(top: 150),
           child: const Text(
             'Braile',
+            textAlign: TextAlign.center,
             style: TextStyle(
               color: Color(0xFF484848),
               fontFamily: loginPageFont,

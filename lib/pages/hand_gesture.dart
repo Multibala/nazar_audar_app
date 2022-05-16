@@ -27,9 +27,10 @@ class _HandGestureScreenState extends State<HandGestureScreen> {
         ),
         toolbarHeight: 190,
         flexibleSpace: Container(
-          padding: const EdgeInsets.only(top: 130, left: 25),
+          padding: const EdgeInsets.only(top: 150),
           child: const Text(
             'Hand Gestures',
+            textAlign: TextAlign.center,
             style: TextStyle(
               color: txtMainColor,
               fontFamily: loginPageFont,

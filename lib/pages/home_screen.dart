@@ -23,92 +23,113 @@ class _HomeScreenState extends State<HomeScreen> {
 
     return Scaffold(
       backgroundColor: loginBackgroundColor,
-      body: SingleChildScrollView(
-        padding: const EdgeInsets.symmetric(vertical: 62, horizontal: 30),
-        child: Column(
-          children: [
-            Row(
-              mainAxisAlignment: MainAxisAlignment.spaceAround,
+      body: Column(children: [
+        Container(
+          // padding: EdgeInsets.only(top: 50),
+          height: 175,
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.spaceAround,
+            crossAxisAlignment: CrossAxisAlignment.center,
+            children: [
+              Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    const Text(
+                      'Welcome,',
+                      style: TextStyle(
+                        fontFamily: loginPageFont,
+                        fontWeight: FontWeight.w400,
+                        fontSize: 28,
+                      ),
+                    ),
+                    Text(
+                      getCapitalize(username as String),
+                      style: const TextStyle(
+                        fontFamily: loginPageFont,
+                        fontWeight: FontWeight.w700,
+                        fontSize: 28,
+                      ),
+                    ),
+                  ]),
+              TextButton(
+                onPressed: () {
+                  Navigator.pushNamed(context, profilePageRoute,
+                      arguments: varArgs);
+                },
+                child: Container(
+                  height: 60,
+                  width: 60,
+                  decoration: const BoxDecoration(
+                    shape: BoxShape.circle,
+                    color: Color(0xffc4c4c4),
+                  ),
+                ),
+              )
+            ],
+          ),
+        ),
+        Container(
+          decoration: const BoxDecoration(
+              color: Colors.white,
+              borderRadius: BorderRadius.vertical(top: Radius.circular(50))),
+          width: double.infinity,
+          height: 560,
+          child: SingleChildScrollView(
+            padding: const EdgeInsets.symmetric(vertical: 30, horizontal: 30),
+            child: Column(
               children: [
-                Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
-                  const Text(
-                    'Welcome,',
-                    style: TextStyle(
-                      fontFamily: loginPageFont,
-                      fontWeight: FontWeight.w400,
-                      fontSize: 28,
-                    ),
+                const Text(
+                  'Available Lessons:',
+                  style: TextStyle(
+                    fontWeight: FontWeight.w600,
+                    fontSize: 28,
+                    fontFamily: loginPageFont,
                   ),
-                  Text(
-                    username as String,
-                    style: const TextStyle(
-                      fontFamily: loginPageFont,
-                      fontWeight: FontWeight.w700,
-                      fontSize: 28,
-                    ),
-                  ),
-                ]),
-                TextButton(
-                  onPressed: () {
-                    Navigator.pushNamed(context, profilePageRoute,
-                        arguments: varArgs);
-                  },
-                  child: Container(
-                    height: 60,
-                    width: 60,
-                    decoration: const BoxDecoration(
-                      shape: BoxShape.circle,
-                      color: Color(0xffc4c4c4),
-                    ),
-                  ),
-                )
+                ),
+                const SizedBox(height: 18),
+                build_rectangle(
+                  'Braille',
+                  'Get started to learn Braille Alphabet',
+                  'braile_icon.png',
+                  Colors.black,
+                  brailePageRoute,
+                ),
+                const SizedBox(
+                  height: 11,
+                ),
+                build_rectangle(
+                  'Gesture',
+                  'Learn to talk with sign language',
+                  'emotions_icon.png',
+                  const Color(0xFFFDB34E),
+                  handGestureRoute,
+                ),
+                const SizedBox(
+                  height: 11,
+                ),
+                build_rectangle(
+                  'Emotions',
+                  'Express your emotions with pictures',
+                  'emotions_icon.png',
+                  const Color(0xFF1C7BB1),
+                  emotionsPageRoute,
+                ),
               ],
             ),
-            const SizedBox(height: 36),
-            const Text(
-              'Available Lessons:',
-              style: TextStyle(
-                fontWeight: FontWeight.w600,
-                fontSize: 28,
-                fontFamily: loginPageFont,
-              ),
-            ),
-            const SizedBox(height: 18),
-            build_rectangle(
-              'Braille',
-              'Get started to learn Braille Alphabet',
-              Icons.abc_outlined,
-              Colors.black,
-              brailePageRoute,
-            ),
-            const SizedBox(
-              height: 11,
-            ),
-            build_rectangle(
-              'Gesture',
-              'Learn to talk with sign language',
-              Icons.abc_outlined,
-              const Color(0xFFFDB34E),
-              handGestureRoute,
-            ),
-            const SizedBox(
-              height: 11,
-            ),
-            build_rectangle(
-              'Emotions',
-              'Express your emotions with pictures',
-              Icons.abc_outlined,
-              const Color(0xFF1C7BB1),
-              emotionsPageRoute,
-            ),
-          ],
-        ),
-      ),
+          ),
+        )
+      ]),
     );
   }
 
-  Widget build_rectangle(String title, String content, IconData icon,
-      Color color, String routeName) {
+  String getCapitalize(String str) {
+    String temp = str.characters.first.toUpperCase() + str.substring(1);
+    return temp;
+  }
+
+  Widget build_rectangle(String title, String content, String data, Color color,
+      String routeName) {
     return TextButton(
         onPressed: () {
           openPagebyRoute(routeName);
@@ -120,7 +141,8 @@ class _HomeScreenState extends State<HomeScreen> {
             borderRadius: BorderRadius.circular(20),
             color: color,
           ),
-          child: Row(children: [
+          child:
+              Row(mainAxisAlignment: MainAxisAlignment.spaceBetween, children: [
             Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
@@ -130,7 +152,7 @@ class _HomeScreenState extends State<HomeScreen> {
                   style: const TextStyle(
                     fontFamily: loginPageFont,
                     fontWeight: FontWeight.w700,
-                    fontSize: 36,
+                    fontSize: 25,
                     color: Colors.white,
                   ),
                 ),
@@ -143,14 +165,18 @@ class _HomeScreenState extends State<HomeScreen> {
                     style: const TextStyle(
                       fontFamily: loginPageFont,
                       fontWeight: FontWeight.w400,
-                      fontSize: 18,
+                      fontSize: 16,
                       color: Colors.white,
                     ),
                   ),
                 )
               ],
             ),
-            Icon(icon),
+            Image.asset(
+              data,
+              width: 60,
+              height: 60,
+            ),
           ]),
         ));
   }
