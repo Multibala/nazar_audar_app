@@ -107,6 +107,9 @@ class LearnAlphabetPage extends StatelessWidget {
                 // height: 101,
                 // width: 71,
               ),
+              const SizedBox(
+                height: 40,
+              ),
               Text(
                 alphabet[index] + alphabet[index].toLowerCase(),
                 textAlign: TextAlign.center,

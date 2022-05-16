@@ -13,12 +13,14 @@ class CategoryPage extends StatefulWidget {
 class _CategoryPageState extends State<CategoryPage> {
   @override
   Widget build(BuildContext context) {
+    FocusScope.of(context).requestFocus(FocusNode());
     Map<String, dynamic> args =
         ModalRoute.of(context)!.settings.arguments as Map<String, dynamic>;
     // print(args);
     List<dynamic> commands = [];
     setState(() {
       commands = args['commands'];
+      print(commands);
     });
     // Map<String, dynamic> args = {
     //   'color': 'E6E6E6',

@@ -131,7 +131,7 @@ class _LearnWordsPageState extends State<LearnWordsPage> {
                     ),
                   ),
                   onPressed: () {
-                    if (temp_word == guessing_word) {
+                    if (temp_word.toString() == guessing_word.toString()) {
                       goNext();
                     } else {
                       Toast.show('word is incorrect)');
@@ -155,6 +155,7 @@ class _LearnWordsPageState extends State<LearnWordsPage> {
 
   Widget enterWordBuilder(BuildContext context, String char) {
     return ButtonTheme(
+      height: 64,
       child: ElevatedButton(
         style: ElevatedButton.styleFrom(
           primary: HexColor.fromHex("#FEECE3"),
@@ -217,9 +218,6 @@ class _LearnWordsPageState extends State<LearnWordsPage> {
             is_active[char] = true;
             if (typing_current >= 3) {
               typing_current = 3;
-              if (guessing_word.toString() == temp_word.toString()) {
-                goNext();
-              }
             }
           })
         },

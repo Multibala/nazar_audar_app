@@ -6,7 +6,8 @@
         "assetImage":"images/emotion_conversation.png",
         "commands":[{
             "title":"Me",
-            "assetImage":"images/emotion_conversation.png",
+            "assetImage":"images/emotions_pic/conversation/cards_conversation_me.png",
+            "title_image":"images/",
             "phrases":[
                 "My name is Beksultan",
                 "I’m Beksultan",
@@ -19,7 +20,227 @@
                 "❓     Who are you?"
             ]
 
-        }]
+        },{
+            "title":"Bath",
+            "assetImage":"images/emotions_pic/conversation/cards_conversation_hello.png",
+            "title_image":"images/emotions_pic/conversation/cards_conversation_hello.png",
+            "phrases":[
+                "My name is Beksultan",
+                "I’m Beksultan",
+                "Do you know my name?",
+                "What is your name? ",
+                "Nice to meet you!",
+                "💙     Do you like me?",
+                "👫     Can we be friends?",
+                "📲     I’m using assistive communication app.",
+                "❓     Who are you?"
+            ]
+
+        },{
+            "title":"Help",
+            "assetImage":"images/emotions_pic/conversation/cards_conversation_help.png",
+            "title_image":"images/emotions_pic/conversation/cards_conversation_help.png",
+            "phrases":[
+                "My name is Beksultan",
+                "I’m Beksultan",
+                "Do you know my name?",
+                "What is your name? ",
+                "Nice to meet you!",
+                "💙     Do you like me?",
+                "👫     Can we be friends?",
+                "📲     I’m using assistive communication app.",
+                "❓     Who are you?"
+            ]
+
+        },{
+            "title":"Listen",
+            "assetImage":"images/emotions_pic/conversation/cards_conversation_listen.png",
+            "title_image":"images/emotions_pic/conversation/cards_conversation_hello.png",
+            "phrases":[
+                "My name is Beksultan",
+                "I’m Beksultan",
+                "Do you know my name?",
+                "What is your name? ",
+                "Nice to meet you!",
+                "💙     Do you like me?",
+                "👫     Can we be friends?",
+                "📲     I’m using assistive communication app.",
+                "❓     Who are you?"
+            ]
+
+        },{
+            "title":"Look",
+            "assetImage":"images/emotions_pic/conversation/cards_conversation_look.png",
+            "title_image":"images/emotions_pic/conversation/cards_conversation_hello.png",
+            "phrases":[
+                "My name is Beksultan",
+                "I’m Beksultan",
+                "Do you know my name?",
+                "What is your name? ",
+                "Nice to meet you!",
+                "💙     Do you like me?",
+                "👫     Can we be friends?",
+                "📲     I’m using assistive communication app.",
+                "❓     Who are you?"
+            ]
+
+        },{
+            "title":"Morning",
+            "assetImage":"images/emotions_pic/conversation/cards_conversation_morning.png",
+            "title_image":"images/emotions_pic/conversation/cards_conversation_hello.png",
+            "phrases":[
+                "My name is Beksultan",
+                "I’m Beksultan",
+                "Do you know my name?",
+                "What is your name? ",
+                "Nice to meet you!",
+                "💙     Do you like me?",
+                "👫     Can we be friends?",
+                "📲     I’m using assistive communication app.",
+                "❓     Who are you?"
+            ]
+
+        },{
+            "title":"Night",
+            "assetImage":"images/emotions_pic/conversation/cards_conversation_night.png",
+            "title_image":"images/emotions_pic/conversation/cards_conversation_hello.png",
+            "phrases":[
+                "My name is Beksultan",
+                "I’m Beksultan",
+                "Do you know my name?",
+                "What is your name? ",
+                "Nice to meet you!",
+                "💙     Do you like me?",
+                "👫     Can we be friends?",
+                "📲     I’m using assistive communication app.",
+                "❓     Who are you?"
+            ]
+
+        },{
+            "title":"No",
+            "assetImage":"images/emotions_pic/conversation/cards_conversation_no.png",
+            "title_image":"images/emotions_pic/conversation/cards_conversation_hello.png",
+            "phrases":[
+                "My name is Beksultan",
+                "I’m Beksultan",
+                "Do you know my name?",
+                "What is your name? ",
+                "Nice to meet you!",
+                "💙     Do you like me?",
+                "👫     Can we be friends?",
+                "📲     I’m using assistive communication app.",
+                "❓     Who are you?"
+            ]
+
+        },{
+            "title":"Play",
+            "assetImage":"images/emotions_pic/conversation/cards_conversation_play.png",
+            "title_image":"images/emotions_pic/conversation/cards_conversation_hello.png",
+            "phrases":[
+                "My name is Beksultan",
+                "I’m Beksultan",
+                "Do you know my name?",
+                "What is your name? ",
+                "Nice to meet you!",
+                "💙     Do you like me?",
+                "👫     Can we be friends?",
+                "📲     I’m using assistive communication app.",
+                "❓     Who are you?"
+            ]
+
+        },{
+            "title":"Sleep",
+            "assetImage":"images/emotions_pic/conversation/cards_conversation_sleep.png",
+            "title_image":"images/emotions_pic/conversation/cards_conversation_hello.png",
+            "phrases":[
+                "My name is Beksultan",
+                "I’m Beksultan",
+                "Do you know my name?",
+                "What is your name? ",
+                "Nice to meet you!",
+                "💙     Do you like me?",
+                "👫     Can we be friends?",
+                "📲     I’m using assistive communication app.",
+                "❓     Who are you?"
+            ]
+
+        },
+        {
+            "title":"Speak",
+            "assetImage":"images/emotions_pic/conversation/cards_conversation_speak.png",
+            "title_image":"images/emotions_pic/conversation/cards_conversation_hello.png",
+            "phrases":[
+                "My name is Beksultan",
+                "I’m Beksultan",
+                "Do you know my name?",
+                "What is your name? ",
+                "Nice to meet you!",
+                "💙     Do you like me?",
+                "👫     Can we be friends?",
+                "📲     I’m using assistive communication app.",
+                "❓     Who are you?"
+            ]
+
+        },
+        {
+            "title":"Toilet",
+            "assetImage":"images/emotions_pic/conversation/cards_conversation_toilet.png",
+            "title_image":"images/emotions_pic/conversation/cards_conversation_hello.png",
+            "phrases":[
+                "My name is Beksultan",
+                "I’m Beksultan",
+                "Do you know my name?",
+                "What is your name? ",
+                "Nice to meet you!",
+                "💙     Do you like me?",
+                "👫     Can we be friends?",
+                "📲     I’m using assistive communication app.",
+                "❓     Who are you?"
+            ]
+
+        },
+        {
+            "title":"What",
+            "assetImage":"images/emotions_pic/conversation/cards_conversation_what.png",
+            "title_image":"images/emotions_pic/conversation/cards_conversation_hello.png",
+            "phrases":[
+                "My name is Beksultan",
+                "I’m Beksultan",
+                "Do you know my name?",
+                "What is your name? ",
+                "Nice to meet you!",
+                "💙     Do you like me?",
+                "👫     Can we be friends?",
+                "📲     I’m using assistive communication app.",
+                "❓     Who are you?"
+            ]
+
+        },
+        {
+            "title":"Yes",
+            "assetImage":"images/emotions_pic/conversation/cards_conversation_yes.png",
+            "title_image":"images/emotions_pic/conversation/cards_conversation_hello.png",
+            "phrases":[
+                "My name is Beksultan",
+                "I’m Beksultan",
+                "Do you know my name?",
+                "What is your name? ",
+                "Nice to meet you!",
+                "💙     Do you like me?",
+                "👫     Can we be friends?",
+                "📲     I’m using assistive communication app.",
+                "❓     Who are you?"
+            ]
+
+        }
+
+
+
+    ]
+
+
+
+
             
         
     },

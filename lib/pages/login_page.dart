@@ -15,7 +15,7 @@ class LoginPage extends StatefulWidget {
 }
 
 class _LoginPageState extends State<LoginPage> {
-  final _username = TextEditingController();
+  final usernameController = TextEditingController();
   final _password = TextEditingController();
   @override
   void initState() {
@@ -83,7 +83,7 @@ class _LoginPageState extends State<LoginPage> {
             ]),
             buildButtonGo(),
             const SizedBox(
-              height: 67,
+              height: 80,
             ),
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
@@ -129,13 +129,11 @@ class _LoginPageState extends State<LoginPage> {
           ),
           height: 60,
           child: TextField(
-            controller: _username,
-            keyboardType: TextInputType.name,
-            onChanged: (String a) => {
-              // if (_username.text.length > 0) {
-              //   _username.clear()
-              //   }
-            },
+            controller: usernameController,
+            keyboardType: TextInputType.text,
+            // onChanged: (String newVal) {
+            //   usernameController.text = newVal;
+            // },
             style: const TextStyle(
               color: Colors.black87,
             ),
@@ -215,7 +213,7 @@ class _LoginPageState extends State<LoginPage> {
   }
 
   singIn() async {
-    String username = _username.text.toLowerCase();
+    String username = usernameController.text.toLowerCase();
     String password = _password.text;
     Map<String, Object?>? mp =
         await UserDatabase.instance.getByUsername(username);

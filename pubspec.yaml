@@ -63,18 +63,7 @@ flutter:
 
   # To add assets to your application, add an assets section, like this:
   assets:
-    - images/female_metis_t_shirt_pose.png
-    - images/Woman_works_on_laptop_sitting_on_the_floor.png
-    - images/yellow_rocket_flying_up.png
-    - images/emotion_activities.png
-    - images/emotion_people.png
-    - images/emotion_colors.png
-    - images/emotion_food.png
-    - images/emotion_shapes.png
-    - images/emotion_animals.png
-    - images/emotion_feelings.png
-    - images/emotion_conversation.png
-    - images/hand_poses/
+    - images/
     - assets/emotions.json
 
 
