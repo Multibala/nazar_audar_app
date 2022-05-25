@@ -43,6 +43,8 @@
             "title":"Help",
             "assetImage":"images/emotions_pic/conversation/cards_conversation_help@2x.png",
             "title_image":"images/emotions_pic/conversation/cards_conversation_help@2x.png",
+            "prefix":"images/emotions_pic/conversation/audio/",
+            "audio_url":"help.mp3",
             "phrases":[
                 "My name is Beksultan",
                 "I’m Beksultan",
@@ -59,6 +61,8 @@
             "title":"Listen",
             "assetImage":"images/emotions_pic/conversation/cards_conversation_listen@2x.png",
             "title_image":"images/emotions_pic/conversation/cards_conversation_hello@2x.png",
+            "prefix":"images/emotions_pic/conversation/audio/",
+            "audio_url":"listen.mp3",
             "phrases":[
                 "My name is Beksultan",
                 "I’m Beksultan",
@@ -75,6 +79,8 @@
             "title":"Look",
             "assetImage":"images/emotions_pic/conversation/cards_conversation_look@2x.png",
             "title_image":"images/emotions_pic/conversation/cards_conversation_hello@2x.png",
+            "prefix":"images/emotions_pic/conversation/audio/",
+            "audio_url":"look.mp3",
             "phrases":[
                 "My name is Beksultan",
                 "I’m Beksultan",
@@ -91,6 +97,8 @@
             "title":"Morning",
             "assetImage":"images/emotions_pic/conversation/cards_conversation_morning@2x.png",
             "title_image":"images/emotions_pic/conversation/cards_conversation_hello@2x.png",
+            "prefix":"images/emotions_pic/conversation/audio/",
+            "audio_url":"morning.mp3",
             "phrases":[
                 "My name is Beksultan",
                 "I’m Beksultan",
@@ -107,6 +115,8 @@
             "title":"Night",
             "assetImage":"images/emotions_pic/conversation/cards_conversation_night@2x.png",
             "title_image":"images/emotions_pic/conversation/cards_conversation_hello@2x.png",
+            "prefix":"images/emotions_pic/conversation/audio/",
+            "audio_url":"night.mp3",
             "phrases":[
                 "My name is Beksultan",
                 "I’m Beksultan",
@@ -123,6 +133,8 @@
             "title":"No",
             "assetImage":"images/emotions_pic/conversation/cards_conversation_no@2x.png",
             "title_image":"images/emotions_pic/conversation/cards_conversation_hello@2x.png",
+            "prefix":"images/emotions_pic/conversation/audio/",
+            "audio_url":"no.mp3",
             "phrases":[
                 "My name is Beksultan",
                 "I’m Beksultan",
@@ -139,6 +151,8 @@
             "title":"Play",
             "assetImage":"images/emotions_pic/conversation/cards_conversation_play@2x.png",
             "title_image":"images/emotions_pic/conversation/cards_conversation_hello@2x.png",
+            "prefix":"images/emotions_pic/conversation/audio/",
+            "audio_url":"play.mp3",
             "phrases":[
                 "My name is Beksultan",
                 "I’m Beksultan",
@@ -155,6 +169,8 @@
             "title":"Sleep",
             "assetImage":"images/emotions_pic/conversation/cards_conversation_sleep@2x.png",
             "title_image":"images/emotions_pic/conversation/cards_conversation_hello@2x.png",
+            "prefix":"images/emotions_pic/conversation/audio/",
+            "audio_url":"sleep.mp3",
             "phrases":[
                 "My name is Beksultan",
                 "I’m Beksultan",
@@ -172,6 +188,8 @@
             "title":"Speak",
             "assetImage":"images/emotions_pic/conversation/cards_conversation_speak@2x.png",
             "title_image":"images/emotions_pic/conversation/cards_conversation_hello@2x.png",
+            "prefix":"images/emotions_pic/conversation/audio/",
+            "audio_url":"speak.mp3",
             "phrases":[
                 "My name is Beksultan",
                 "I’m Beksultan",
@@ -189,6 +207,8 @@
             "title":"Toilet",
             "assetImage":"images/emotions_pic/conversation/cards_conversation_toilet@2x.png",
             "title_image":"images/emotions_pic/conversation/cards_conversation_hello@2x.png",
+            "prefix":"images/emotions_pic/conversation/audio/",
+            "audio_url":"toilet.mp3",
             "phrases":[
                 "My name is Beksultan",
                 "I’m Beksultan",
@@ -206,6 +226,8 @@
             "title":"What",
             "assetImage":"images/emotions_pic/conversation/cards_conversation_what@2x.png",
             "title_image":"images/emotions_pic/conversation/cards_conversation_hello@2x.png",
+            "prefix":"images/emotions_pic/conversation/audio/",
+            "audio_url":"what.mp3",
             "phrases":[
                 "My name is Beksultan",
                 "I’m Beksultan",
@@ -223,6 +245,8 @@
             "title":"Yes",
             "assetImage":"images/emotions_pic/conversation/cards_conversation_yes@2x.png",
             "title_image":"images/emotions_pic/conversation/cards_conversation_hello@2x.png",
+            "prefix":"images/emotions_pic/conversation/audio/",
+            "audio_url":"yes.mp3",
             "phrases":[
                 "My name is Beksultan",
                 "I’m Beksultan",

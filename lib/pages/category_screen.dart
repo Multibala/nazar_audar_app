@@ -13,33 +13,6 @@ class CategoryPage extends StatefulWidget {
 }
 
 class _CategoryPageState extends State<CategoryPage> {
-  final audio_player = AudioPlayer();
-  bool isPlaying = false;
-
-  @override
-  void initState() {
-    // TODO: implement initState
-    // setAudio('images/emotions_pic/conversation/audio/me.mp3');
-    super.initState();
-  }
-
-  Future setAudio(String path, String prefix) async {
-    audio_player.setReleaseMode(ReleaseMode.STOP);
-
-    final player = AudioCache(prefix: prefix);
-    final url = await player.load(path);
-    audio_player.setUrl(url.path, isLocal: true);
-  }
-
-  @override
-  void dispose() {
-    // TODO: implement dispose
-
-    super.dispose();
-    audio_player.dispose();
-    audio_player.release();
-  }
-
   @override
   Widget build(BuildContext context) {
     FocusScope.of(context).requestFocus(FocusNode());
@@ -50,11 +23,6 @@ class _CategoryPageState extends State<CategoryPage> {
     setState(() {
       commands = args['commands'];
     });
-    // Map<String, dynamic> args = {
-    //   'color': 'E6E6E6',
-    //   'title': 'hello',
-    //   'assetImage': '',
-    // };
 
     return MaterialApp(
       theme: ThemeData(
