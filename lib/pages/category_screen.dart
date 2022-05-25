@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:nazar_audar_app/pages/audio_emotions.dart';
 
 import '../constants/colors.dart';
 import '../constants/fonts.dart';
@@ -18,24 +19,25 @@ class _CategoryPageState extends State<CategoryPage> {
   @override
   void initState() {
     // TODO: implement initState
-    // setAudio('images/emotions_pic/conversation/audion/me.mp3');
+    // setAudio('images/emotions_pic/conversation/audio/me.mp3');
     super.initState();
   }
 
-  Future setAudio(String path) async {
-    audio_player.setReleaseMode(ReleaseMode.LOOP);
+  Future setAudio(String path, String prefix) async {
+    audio_player.setReleaseMode(ReleaseMode.STOP);
 
-    final player =
-        AudioCache(prefix: 'images/emotions_pic/conversation/audion/');
-    final url = await player.load('me.mp3');
+    final player = AudioCache(prefix: prefix);
+    final url = await player.load(path);
     audio_player.setUrl(url.path, isLocal: true);
   }
 
   @override
   void dispose() {
     // TODO: implement dispose
-    audio_player.dispose();
+
     super.dispose();
+    audio_player.dispose();
+    audio_player.release();
   }
 
   @override
@@ -102,63 +104,10 @@ class _CategoryPageState extends State<CategoryPage> {
             mainAxisSpacing: 8,
             children: List.generate(
               commands.length,
-              (index) => getWidgetbyData(commands[index]),
+              (index) => AudioEmotionsButton(data: commands[index]),
             ),
           ),
         ),
-      ),
-    );
-  }
-
-  Widget getWidgetbyData(Map<String, dynamic> data) {
-    String title = data['title'];
-    String image = data['assetImage'];
-    List phrases = data['phrases'];
-    String url = data['audio_url'] ?? '';
-    setAudio(url);
-    String color = 'E6E6E6';
-    return ElevatedButton(
-      style: ButtonStyle(
-        shape: MaterialStateProperty.all<RoundedRectangleBorder>(
-            RoundedRectangleBorder(
-          borderRadius: BorderRadius.circular(15.0),
-        )),
-        // padding: MaterialStateProperty.all(
-        //     const EdgeInsets.symmetric(vertical: 22, horizontal: 45)),
-        backgroundColor: MaterialStateProperty.all(HexColor.fromHex(color)),
-      ),
-      onPressed: () async {
-        if (isPlaying) {
-          await audio_player.pause();
-        } else {
-          var res = await audio_player.play(url);
-          // ignore: avoid_print
-          print(res);
-          if (res == 1) {
-            setState(() {
-              isPlaying = true;
-            });
-          }
-        }
-      },
-      child: Column(
-        children: [
-          Image(
-            image: AssetImage(image),
-          ),
-          const SizedBox(
-            height: 5,
-          ),
-          Text(
-            title,
-            style: const TextStyle(
-              fontFamily: loginPageFont,
-              fontSize: 16,
-              fontWeight: FontWeight.w500,
-              color: Colors.black,
-            ),
-          ),
-        ],
       ),
     );
   }

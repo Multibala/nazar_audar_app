@@ -8,8 +8,8 @@
             {
             "title":"Me",
             "assetImage":"images/emotions_pic/conversation/cards_conversation_me@2x.png",
-            "title_image":"images/",
-            "audio_url":"images/emotions_pic/conversation/audio/me.mp3",
+            "prefix":"images/emotions_pic/conversation/audio/",
+            "audio_url":"me.mp3",
             "phrases":[
                 "My name is Beksultan",
                 "I’m Beksultan",
@@ -25,7 +25,8 @@
         },{
             "title":"Bath",
             "assetImage":"images/emotions_pic/conversation/cards_conversation_hello@2x.png",
-            "title_image":"images/emotions_pic/conversation/cards_conversation_hello@2x.png",
+            "prefix":"images/emotions_pic/conversation/audio/",
+            "audio_url":"bath.mp3",
             "phrases":[
                 "My name is Beksultan",
                 "I’m Beksultan",
